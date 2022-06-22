@@ -1,0 +1,123 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: $bg-body;
+}
+
+h2 {
+    font-family: $font-titulos; 
+    font-size: 1.875rem; 
+    margin: 0;
+}
+
+p {
+    font-family: $font-textos; 
+    margin: 0;
+}
+
+a {
+    font-size: 1.25rem; 
+}
+
+.headerPaginas {
+    font-family: $font-titulos; 
+    font-size: 1.25rem;
+    color: rgb(0, 0, 0);
+}
+
+
+.headerIndex {
+    background-image: url(../assets/imagenes/argenplas1.jpg);
+    height: 250px;
+    width: cover;
+}
+
+.tituloPrincipal {
+    font-family: $font-titulos;
+    font-size: clamp(40px, 6vw, 80px);
+    color: rgb(220, 247, 220);
+}
+
+
+.colorNav {
+    background-color: $color-nav;
+}
+
+.coloresBotones {
+    @extend %coloresBotones;
+}
+
+.h2 {
+    padding: 3%;
+    margin: 0;
+}
+
+.parrafo {
+    padding: 3%;
+    font-size: 1.563rem;
+}
+
+.imagenCompras {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5%;
+}
+
+.card-img,
+.card-img-bottom,
+.card-img-top {
+    width: 50px;
+}
+
+.margenDeCards {
+    margin: 0.5em 0;
+}
+
+.paddingBotones {
+    display: block;
+    padding: 0.5em 0.5em;
+}
+
+.footer {
+    font-size: 1.1rem;
+    background-color: $color-footer;
+}
+
+.videoCables {
+    width: 50%;
+    height: 50%;
+}
+
+iframe {
+    margin: 2%;
+}
+
+
+.imgCardProductos {
+    width: 100%;
+}
+
+.paddingCardProductos {
+    margin: 2%;
+}
+
+.sinMargenes {
+    margin: 0;
+    padding: 0;
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.cardsAnimadas:hover{
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+iframe {
+    @media screen and (max-width: 480px) {
+        width: 80%;
+    }
+}
